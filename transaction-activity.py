@@ -168,3 +168,19 @@ def main():
     print(
         "Transaction exported"
     )
+
+    print(
+        "Session closed"
+    )
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("Cancelled")
+    except Exception as exc:
+        print("Failure:", exc)
+
+print("End")
+```
